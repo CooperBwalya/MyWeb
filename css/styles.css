@@ -25,7 +25,7 @@ body {
 
 /* Dark Theme Palette */
 body.dark-theme {
-    background-color: #0f172a;
+    background-color: #08090c;
     color: #f8fafc;
 }
 
@@ -35,7 +35,7 @@ body.dark-theme .project-card,
 body.dark-theme .calculator-container,
 body.dark-theme #nav-menu {
     background-color: #1e293b;
-    color: #f8fafc;
+    color: #203041;
     border-color: #334155;
 }
 
@@ -46,7 +46,7 @@ body.dark-theme th {
 
 body.dark-theme input, 
 body.dark-theme textarea {
-    background-color: #0f172a;
+    background-color: #040608;
     color: #f8fafc;
     border-color: #334155;
 }
@@ -297,7 +297,7 @@ main {
     padding: 12px;
     border-radius: 6px;
     background-color: #dcfce7;
-    color: #15803d;
+    color: #000000;
 }
 
 .hidden-msg {
