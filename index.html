@@ -2,186 +2,255 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device, initial-scale=1.0">
-    <title>My First Web Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberty Bwalya | Web Developer Portfolio</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
-<head>
+    <script src="js/script.js" defer></script>
+</head>
 <body>
 
-    <h1>Welcome to the world of web programming</h1>
-
-    <h2>Liberty Bwalya 202401399</h2>
-
-    <ul><li>gaming</li><li>reading</li><li>swimming</li></ul>
-
-    <p>Hello World! This is my first HTML document.</p>
-
-    <p>I am currently learning Introduction to Web Technologies</p>
-
-  <p>Computer Science Student | ICT251 Web Technologies</p>
-  </header>
-
-  <!-- Navigation Bar -->
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#hobbies">Hobbies</a>
-    <a href="#plan">Learning Plan</a>
-    <a href="#photos">Photos</a>
-    <a href="#media">Media</a>
-    <a href="#contact">Contact</a>
-    <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
-  </nav>
-
-  <!-- Main Content Area -->
-  <main>
-
-    <!-- About Me Section -->
-    <section id="about" class="content-section">
-      <h2>About Me</h2>
-      <p>
-        Hello! I am a dedicated student currently pursuing studies in ICT and Web Technologies.
-        I have a strong passion for solving technical problems, exploring dynamic web applications,
-        and building elegant, user-friendly digital tools. My goal is to master modern frontend and backend
-        technologies so I can create impactful software solutions for real-world application.
-      </p>
-    </section>
-
-    <!-- Hobbies Section -->
-    <section id="hobbies" class="content-section">
-      <h2>My Hobbies</h2>
-      <ul>
-        <li>Software development and coding projects</li>
-        <li>Exploring cybersecurity and system testing</li>
-        <li>Listening to music and podcasts</li>
-      </ul>
-    </section>
-
-    <!-- Learning Plan Section -->
-    <section id="plan" class="content-section">
-      <h2>My Learning Plan</h2>
-      <p>Steps I am taking to improve my web development skills:</p>
-      <ol>
-        <li>Practice semantic HTML layout structuring daily.</li>
-        <li>Master responsive CSS layout design techniques (Flexbox and Grid).</li>
-        <li>Build interactive web applications using vanilla JavaScript.</li>
-      </ol>
-
-      <h3>Weekly Learning Schedule</h3>
-      <table>
-        <caption>Weekly Web Technology Learning Schedule</caption>
-        <thead>
-          <tr>
-            <th>Day</th>
-            <th>Topic</th>
-            <th>Practice Task</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Monday</td>
-            <td>HTML5 & Page Structure</td>
-            <td>Build semantic forms and multimedia layouts</td>
-          </tr>
-          <tr>
-            <td>Wednesday</td>
-            <td>CSS Box Model & Styling</td>
-            <td>Design custom navigation bars and hover states</td>
-          </tr>
-          <tr>
-            <td>Friday</td>
-            <td>Responsive Layouts</td>
-            <td>Implement media queries and dynamic grids</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- Photo Gallery Section -->
-    <section id="photos" class="content-section">
-      <h2>My Photos</h2>
-      <div class="gallery">
-        <figure>
-          <img src="images/20260912_173703.jpg" alt="University campus environment where I study">
-          <figcaption>My university campus environment.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/20260927_120840.jpg" alt="My primary computer workspace setup">
-          <figcaption>My programming workspace setup.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/IMG-20260427-WA0191.jpg" alt="Technology workshop session with peers">
-          <figcaption>Attending a technology study session.</figcaption>
-          <figcaption>Picture Credit: Mubanga Kambone</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- Media Section -->
-    <section id="media" class="content-section">
-      <h2>My Media</h2>
-
-      <!-- Video Player -->
-      <article class="media-item">
-        <h3>Self-Introduction Video</h3>
-        <video controls>
-          <source src="videos/20260927_111110.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <p><strong>Video Transcript / Summary:</strong> "Hello, my name is Liberty Bwalya. I am enrolled in the ICT programme, and one key web development skill I hope to master is creating responsive, accessible modern web design."</p>
-      </article>
-
-      <!-- Audio Player -->
-      <article class="media-item">
-        <h3>Audio Clip</h3>
-        <audio controls>
-          <source src="videos/voice.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-        <p>This short recording shares my interest in web technologies and how I plan to leverage programming to build digital tools.</p>
-      </article>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section id="contact" class="content-section">
-      <h2>Contact Me</h2>
-      <p><em>Note: This contact form is for demonstration purposes only and does not submit data online.</em></p>
-     
-      <form action="#" method="post">
-        <div class="form-group">
-          <label for="name">Full Name:</label>
-          <input type="text" id="name" name="name" required>
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="#">Liberty Bwalya</a>
         </div>
+        
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a href="#projects"><i class="fa-solid fa-code"></i> Projects</a></li>
+                <li><a href="#hobbies"><i class="fa-solid fa-heart"></i> Hobbies</a></li>
+                <li><a href="#learning"><i class="fa-solid fa-graduation-cap"></i> Learning</a></li>
+                <li><a href="#photos"><i class="fa-solid fa-image"></i> Photos</a></li>
+                <li><a href="#media"><i class="fa-solid fa-film"></i> Media</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
 
-        <div class="form-group">
-          <label for="email">Email Address: cooperbwalya289@gmail.com </label>
-          <input type="email" id="email" name="email" required>
+        <div class="nav-controls">
+            <button id="theme-toggle-btn" class="icon-btn" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button id="mobile-menu-btn" class="icon-btn mobile-only" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
+    </header>
 
-        <div class="form-group">
-          <label for="topic">Topic:</label>
-          <select id="topic" name="topic">
-            <option value="general">General Inquiry</option>
-            <option value="project">Project Collaboration</option>
-            <option value="feedback">Feedback</option>
-          </select>
-        </div>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <span class="badge">ICT & Web Technologies</span>
+                <h1>Crafting Modern Digital Experiences</h1>
+                <p>Welcome to my portfolio! I build responsive, interactive, and user-centric web applications at Mulungushi University.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn"><i class="fa-solid fa-briefcase"></i> View My Projects</a>
+                    <a href="#contact" class="btn secondary-btn"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+                </div>
+            </div>
+        </section>
 
-        <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
+        <!-- About Me Section -->
+        <section id="about" class="content-section card">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-id-card"></i> About Me</h2>
+            </div>
+            <p class="about-text">
+                Hello! I am a dedicated student currently pursuing studies in ICT and Web Technologies. 
+                I have a strong passion for solving technical problems, exploring dynamic web applications, 
+                and building elegant, user-friendly digital tools. My goal is to master modern frontend and backend 
+                technologies so I can create impactful software solutions for real-world application.
+            </p>
+        </section>
 
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
-    </section>
+        <!-- Projects & Skills with Search Filter -->
+        <section id="projects" class="content-section card">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-laptop-code"></i> Projects & Skills</h2>
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="project-search" placeholder="Filter projects or skills...">
+                </div>
+            </div>
 
-  </main>
+            <div class="project-grid" id="project-grid">
+                <article class="project-card">
+                    <div class="card-tag">Frontend</div>
+                    <h3>1. Responsive Web Design</h3>
+                    <p>Designing web pages that automatically adapt cleanly across mobile phones, tablets, and desktop computers using media queries and flexible layouts.</p>
+                </article>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 Liberty Bwalya. Built for ICT251 Web Technologies Activity 2.</p>
-  </footer>
+                <article class="project-card">
+                    <div class="card-tag">DevOps</div>
+                    <h3>2. Git & Version Control</h3>
+                    <p>Managing project versions, tracking file changes, and collaborating on repositories using Git and GitHub.</p>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-tag">JavaScript</div>
+                    <h3>3. Interactive JS Development</h3>
+                    <p>Building dynamic user interfaces, DOM interactions, and validating form fields client-side.</p>
+                </article>
+            </div>
+            <p id="no-projects-msg" class="hidden-msg">No matching projects found.</p>
+
+            <button id="toggle-project-btn" class="btn secondary-btn" style="margin-top: 15px;">
+                <i class="fa-solid fa-chevron-down"></i> Show Additional Details
+            </button>
+            <div id="project-details" class="hidden-msg" style="margin-top: 15px; padding: 12px; background: var(--bg-primary); border-radius: var(--radius);">
+                <p><strong>Additional Note:</strong> All these projects were developed as part of coursework and practical activities at Mulungushi University.</p>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="content-section card">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-icons"></i> My Hobbies</h2>
+            </div>
+            <ul class="hobby-list">
+                <li><i class="fa-solid fa-code"></i> Web Development & Coding</li>
+                <li><i class="fa-solid fa-shield-halved"></i> Cybersecurity Practices</li>
+                <li><i class="fa-solid fa-music"></i> Music Streaming & Audio Production</li>
+            </ul>
+        </section>
+
+        <!-- Learning Plan & Calculator -->
+        <section id="learning" class="content-section card">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-book-open"></i> Learning Plan & Schedule</h2>
+            </div>
+
+            <ol class="plan-steps">
+                <li>Master HTML5 and semantic structure.</li>
+                <li>Style modern web components using CSS flexbox and grid layouts.</li>
+                <li>Implement JavaScript client-side interactive logic.</li>
+            </ol>
+
+            <div class="table-wrapper">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Topic</th>
+                            <th>Target Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML5 & Semantic Elements</td>
+                            <td>Week 1 - 2</td>
+                            <td><span class="status-badge complete">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>CSS Layouts & Responsive Design</td>
+                            <td>Week 3 - 4</td>
+                            <td><span class="status-badge complete">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript DOM & Events</td>
+                            <td>Week 5 - 6</td>
+                            <td><span class="status-badge in-progress">In Progress</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="calculator-container">
+                <h3><i class="fa-solid fa-calculator"></i> Study Hours Planner</h3>
+                <div class="calc-inputs">
+                    <div class="input-group">
+                        <label for="daily-hours">Hours per Day</label>
+                        <input type="number" id="daily-hours" min="0" max="24" placeholder="e.g. 3">
+                    </div>
+                    <div class="input-group">
+                        <label for="weekly-days">Days per Week (1-7)</label>
+                        <input type="number" id="weekly-days" min="1" max="7" placeholder="e.g. 5">
+                    </div>
+                </div>
+                <button id="calc-btn" class="btn primary-btn"><i class="fa-solid fa-equals"></i> Calculate</button>
+                <div id="calc-output" class="calc-result" style="margin-top: 10px; font-weight: bold;"></div>
+            </div>
+        </section>
+
+        <!-- Photos Section -->
+        <section id="photos" class="content-section card">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-camera"></i> Photos Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <figure class="gallery-item">
+                    <img src="images/20260912_173703.jpg" alt="Workspace setup for web development">
+                    <figcaption>Workspace setup for web development.</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/20260927_120840.jpg" alt="Testing responsive designs on mobile viewports">
+                    <figcaption>Testing responsive designs on mobile viewports.</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/IMG-20260427-WA0191.jpg" alt="Campus and practical activities">
+                    <figcaption>Campus and practical activities.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media" class="content-section card">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-photo-film"></i> Media Showcase</h2>
+            </div>
+            <div class="media-container">
+                <h3>Video Demonstration</h3>
+                <div class="video-wrapper">
+                    <video controls>
+                        <source src="videos/20260927_111110.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                </div>
+                <p class="media-caption">Short video walk-through of the website project layout.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section card">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-comments"></i> Contact Me</h2>
+            </div>
+            <p class="demo-note"><i class="fa-solid fa-circle-info"></i> Browser demonstration only - no message is sent.</p>
+            
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                    <span class="error-msg" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="e.g. user@example.com" required>
+                    <span class="error-msg" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Write your message here..." required></textarea>
+                    <span class="error-msg" id="message-error"></span>
+                </div>
+
+                <button type="submit" class="btn primary-btn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            </form>
+
+            <div id="form-feedback" class="summary-box hidden-msg"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Liberty Bwalya | ICT251 Web Technologies</p>
+        <p><a href="https://github.com/CoopeBwalya/MyWeb" target="_blank" class="github-link"><i class="fa-brands fa-github"></i> View Source on GitHub</a></p>
+    </footer>
 
 </body>
 </html>
-    
